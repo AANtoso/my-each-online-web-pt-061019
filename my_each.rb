@@ -1,4 +1,9 @@
-def my_each(file) # put argument(s) here
-  file = "while"
+def my_each(array) # put argument(s) here
+  i = 0
+  while i < array.length
+    yield(array[i])
+    i += 1
+  end
+    array
   # code here
 end
